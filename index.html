@@ -997,7 +997,27 @@
 <center>
 
 <br />
-<a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/taraftarium24_X" target="_blank">"Güncel Taraftarium24 giriş adresimiz için bizi takip et @taraftarium24_X</a><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js"></script>
+<style>
+        #yenileButton {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #yenileButton:hover {
+            background-color: darkred;
+        }
+    </style>
+
+    <button id="yenileButton">Yayınlar Açılmıyorsa Bu Butona Tıklayın Yada F5 Yapın!</button>
+    
+    <script>
+        document.getElementById("yenileButton").addEventListener("click", function() {
+            location.reload();
+        });
+    </script>
 </center>
 </span>
 </div>
